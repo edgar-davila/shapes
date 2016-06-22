@@ -5,6 +5,8 @@ package com.test.shapes.model;
  */
 public class ShapeFactory {
     public Shape getShape(String type) {
+        if (type == null) return null;
+
         switch (type.toUpperCase()) {
             case "TRIANGLE":
                 return new Triangle();
