@@ -8,9 +8,7 @@ public class Triangle extends Shape {
     private double height;
     private double base;
 
-    Triangle(double height, double base) {
-        this.height = height;
-        this.base = base;
+    Triangle() {
     }
 
     public Double getSurface() {
@@ -21,7 +19,15 @@ public class Triangle extends Shape {
         return base;
     }
 
+    public void setBase(double base) {
+        this.base = base;
+    }
+
     public Double getHeight() {
         return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
     }
 }

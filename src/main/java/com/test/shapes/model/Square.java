@@ -7,8 +7,7 @@ public class Square extends Shape {
 
     private double height;
 
-    Square(double height) {
-        this.height = height;
+    Square() {
     }
 
     public Double getSurface() {
@@ -21,5 +20,9 @@ public class Square extends Shape {
 
     public Double getHeight() {
         return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
     }
 }
