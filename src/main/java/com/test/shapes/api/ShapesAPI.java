@@ -26,9 +26,8 @@ public class ShapesAPI {
     }
 
     @ResponseBody
-    @RequestMapping(value = "/test", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/testShapes", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<List<Shape>> runTest() {
-        ShapeFactory factory = new ShapeFactory();
         ArrayList<Shape> shapes = new ArrayList<Shape>();
 
         Shape s1 = factory.getShape("ciRCle");
