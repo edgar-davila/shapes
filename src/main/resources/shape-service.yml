@@ -1,0 +1,13 @@
+# Spring properties
+spring:
+  application:
+     name: order-service  # Service registers under this name
+  freemarker:
+    enabled: false           # Ignore Eureka dashboard FreeMarker templates
+  thymeleaf:
+    enabled: false
+
+# HTTP Server
+server:
+  port: 8080   # HTTP (Tomcat) port
+
